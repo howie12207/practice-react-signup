@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  @apply h-screen w-screen bg-red;
+}
+
+#root {
+  font-family: "Poppins", sans-serif;
+  background: url("img/bg-intro-mobile.png");
+  @apply h-screen w-screen;
+}
+@media (min-width: 640px) {
+  #root {
+    background: url("img/bg-intro-desktop.png");
+  }
+}
